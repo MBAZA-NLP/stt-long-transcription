@@ -2,7 +2,7 @@ FROM nvcr.io/nvidia/nemo:23.06
 RUN apt-get clean all
 RUN apt-get update
 RUN apt-get dist-upgrade -y
-RUN apt-get install -y libsndfile1 espeak-ng git git-lfs ffmepg
+RUN apt-get install -y libsndfile1 espeak-ng git git-lfs ffmpeg
 RUN pip install --upgrade pip
 
 WORKDIR /code/stt-api
