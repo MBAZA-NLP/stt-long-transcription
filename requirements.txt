@@ -1,0 +1,4 @@
+gradio
+aiofiles==22.1.0
+python-multipart
+pydub

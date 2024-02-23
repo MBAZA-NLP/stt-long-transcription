@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  asr-long-format:
+    build: .
+    command: gradio app.py
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    networks:
+      - infrastructure_default
+
+
+networks:
+  infrastructure_default:
+    external: true
