@@ -39,7 +39,6 @@ def transcription_text(audio_input):
 
 
 if __name__ == '__main__':
-    lang_codes = list(flores_codes.keys())
     with gr.Blocks() as demo:    
         audio_input = gr.Audio(label="Upload Audio",type="filepath")
         transcription = gr.Textbox(label="Transcription")
