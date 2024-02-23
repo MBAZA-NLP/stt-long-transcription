@@ -13,6 +13,8 @@ asr_model = nemo_asr.models.EncDecCTCModelBPE.from_pretrained(model_name="stt_rw
 asr_model = asr_model.to(device)
 
 def transcription_text(audio_input):
+    if audio_input == None or audio_input == "":
+        return "please input the audio first"
     file_name = audio_input.split(".")[0]+".wav"
     file_extension = audio_input.split(".")[-1]
     try:
