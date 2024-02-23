@@ -5,18 +5,12 @@ services:
     build: .
     command: gradio app.py
     restart: unless-stopped
-    runtime: nvidia  
+    runtime: nvidia  #use when you are using an nvidia gpu else comment this section
     ports:
       - "7860:7860"
     networks:
       - infrastructure_default
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+   
 
 
 networks:
