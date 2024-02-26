@@ -10,8 +10,10 @@ NVIDIA GPU  : Prefered but not required
 Docker      : Advised
 ```
 ## Installation
-1. Install [Docker](https://docs.docker.com/get-docker/) on your machine
-2. Deploy the container
+1. git clone https://github.com/MBAZA-NLP/stt-long-transcription.git
+2. cd stt-long
+3. Install [Docker](https://docs.docker.com/get-docker/) on your machine
+4. Deploy the container
 ```
 docker compose build
 docker compose up -d
