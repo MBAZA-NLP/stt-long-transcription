@@ -11,7 +11,8 @@ Docker      : Advised
 ```
 ## Installation
 1. Clone the repository
-```$ git clone https://github.com/MBAZA-NLP/stt-long-transcription.git
+```
+   $ git clone https://github.com/MBAZA-NLP/stt-long-transcription.git
    $ cd stt-long
 ```
 2. Install [Docker](https://docs.docker.com/get-docker/) on your machine
